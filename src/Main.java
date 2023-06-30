@@ -10,7 +10,6 @@ public class Main {
         container.addPreProcessor(preProcessor);
         container.addPostProcessor(postProcessor);
 
-        SpringEmulator emulator = new SpringEmulator();
-        emulator.run(container, Main.class);
+        container.run(Main.class);
     }
 }
